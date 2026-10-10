@@ -1,0 +1,18 @@
+{
+  "scenarioId": "demo.error.v1",
+  "onError": "demo(\"log-error\")",
+  "acts": [
+    {
+      "trigger": "demo(\"say-hello\")",
+      "comment": "This one succeeds."
+    },
+    {
+      "trigger": "demo(\"fail-on-purpose\")",
+      "comment": "This one fails - onError runs, the next act does not."
+    },
+    {
+      "trigger": "demo(\"say-hello\")",
+      "comment": "Never reached."
+    }
+  ]
+}

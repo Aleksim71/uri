@@ -1,0 +1,19 @@
+{
+  "scenarioId": "demo.main.v1",
+  "onSuccess": "demo(\"say-hello\")",
+  "onError": "demo(\"log-error\")",
+  "acts": [
+    {
+      "trigger": "demo(\"say-hello\")",
+      "comment": "Say hello."
+    },
+    {
+      "trigger": "demo(\"sub-scenario\")",
+      "comment": "Run a nested list of acts."
+    },
+    {
+      "trigger": "demo(\"write-report\")",
+      "comment": "Write a report - the 'real task'."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "comment": "Which notification channels are enabled. Each notify handler checks its own flag; the engine does not know about channels.",
+  "channels": {
+    "telegram": true,
+    "email": true
+  }
+}

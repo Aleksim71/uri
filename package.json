@@ -1,0 +1,25 @@
+{
+  "name": "uri",
+  "version": "0.2.0",
+  "description": "A deliberately small engine for JSON-defined automation scenarios, with a real Freelancehunt notifier built on top.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "node run.mjs scenarios/demo/scenario.json",
+    "demo": "node run.mjs scenarios/demo/scenario.json",
+    "demo:error": "node run.mjs scenarios/demo/scenario-error.json",
+    "demo:terminal": "node run.mjs scenarios/demo/scenario-terminal.json",
+    "poll": "node run.mjs scenarios/freelancehunt/poll.json",
+    "poll:messages": "node run.mjs scenarios/freelancehunt/poll-messages.json",
+    "poll:loop": "node poll-loop.mjs scenarios/freelancehunt/poll.json 15",
+    "test": "node --test test/*.test.mjs"
+  },
+  "author": "Oleksandr Simkin",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^10.0.16"
+  }
+}

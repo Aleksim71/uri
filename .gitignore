@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# runtime data: seen ids, outbox, logs, reports
+artifacts/*
+!artifacts/.gitkeep
+
+*.zip
+*.tmp
+.DS_Store

@@ -1,0 +1,35 @@
+{
+  "description": "Freelancehunt app: poll projects and client messages, notify via Telegram/email.",
+  "acts": [
+    {
+      "trigger": "freelancehunt(\"fetch-new-projects\")",
+      "description": "Poll the projects API, filter, add matches to the outbox.",
+      "kind": "atom",
+      "ref": "handlers/freelancehunt/fetch-new-projects.mjs"
+    },
+    {
+      "trigger": "telegram(\"notify-new-matches\")",
+      "description": "Send pending project matches to Telegram.",
+      "kind": "atom",
+      "ref": "handlers/telegram/notify-new-matches.mjs"
+    },
+    {
+      "trigger": "email(\"notify-new-matches\")",
+      "description": "Send pending project matches in one email (SMTP).",
+      "kind": "atom",
+      "ref": "handlers/email/notify-new-matches.mjs"
+    },
+    {
+      "trigger": "freelancehunt(\"fetch-new-messages\")",
+      "description": "Poll the Threads API, add unread client messages to the outbox.",
+      "kind": "atom",
+      "ref": "handlers/freelancehunt/fetch-new-messages.mjs"
+    },
+    {
+      "trigger": "telegram(\"notify-new-messages\")",
+      "description": "Send pending client messages to Telegram.",
+      "kind": "atom",
+      "ref": "handlers/telegram/notify-new-messages.mjs"
+    }
+  ]
+}

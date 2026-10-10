@@ -1,0 +1,18 @@
+{
+  "scenarioId": "freelancehunt.poll.v1",
+  "onError": "demo(\"log-error\")",
+  "acts": [
+    {
+      "trigger": "freelancehunt(\"fetch-new-projects\")",
+      "comment": "Poll the API, filter, dedupe, add to the outbox."
+    },
+    {
+      "trigger": "telegram(\"notify-new-matches\")",
+      "comment": "Send pending matches to Telegram (if enabled)."
+    },
+    {
+      "trigger": "email(\"notify-new-matches\")",
+      "comment": "Send pending matches by email (if enabled)."
+    }
+  ]
+}

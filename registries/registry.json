@@ -1,0 +1,15 @@
+{
+  "description": "Connected registries, searched top to bottom (first match wins).",
+  "registries": [
+    {
+      "registry": "freelancehunt",
+      "registryRef": "registries/freelancehunt.registry.json",
+      "description": "Freelancehunt: project and message polling, Telegram/email notifications."
+    },
+    {
+      "registry": "demo",
+      "registryRef": "registries/demo.registry.json",
+      "description": "Demo acts."
+    }
+  ]
+}

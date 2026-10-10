@@ -1,0 +1,9 @@
+{
+  "scenarioId": "demo.sub.v1",
+  "acts": [
+    {
+      "trigger": "demo(\"say-hello\")",
+      "comment": "Say hello again, from the nested list."
+    }
+  ]
+}

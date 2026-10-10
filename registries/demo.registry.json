@@ -1,0 +1,47 @@
+{
+  "description": "Demo acts: the engine's happy path, error path, nested lists and terminal commands.",
+  "acts": [
+    {
+      "trigger": "demo(\"say-hello\")",
+      "description": "Prints a greeting.",
+      "kind": "atom",
+      "ref": "handlers/demo/say-hello.mjs"
+    },
+    {
+      "trigger": "demo(\"write-report\")",
+      "description": "Writes a report artifact.",
+      "kind": "atom",
+      "ref": "handlers/demo/write-report.mjs"
+    },
+    {
+      "trigger": "demo(\"fail-on-purpose\")",
+      "description": "Always fails - exercises the error path.",
+      "kind": "atom",
+      "ref": "handlers/demo/fail-on-purpose.mjs"
+    },
+    {
+      "trigger": "demo(\"log-error\")",
+      "description": "Appends to artifacts/error.log. Example onError hook.",
+      "kind": "atom",
+      "ref": "handlers/demo/log-error.mjs"
+    },
+    {
+      "trigger": "demo(\"sub-scenario\")",
+      "description": "A nested list of acts.",
+      "kind": "list",
+      "ref": "scenarios/demo/sub-scenario.json"
+    },
+    {
+      "trigger": "node(\"*\")",
+      "description": "Wildcard route: any node command, run by the generic terminal handler.",
+      "kind": "atom",
+      "ref": "handlers/system/terminal-command.mjs"
+    },
+    {
+      "trigger": "git(\"*\")",
+      "description": "Wildcard route: any git command.",
+      "kind": "atom",
+      "ref": "handlers/system/terminal-command.mjs"
+    }
+  ]
+}

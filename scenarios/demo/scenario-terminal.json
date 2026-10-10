@@ -1,0 +1,18 @@
+{
+  "scenarioId": "demo.terminal.v1",
+  "onError": "demo(\"log-error\")",
+  "acts": [
+    {
+      "trigger": "demo(\"say-hello\")",
+      "comment": "A regular atom - a JS function."
+    },
+    {
+      "trigger": "node(\"--version\")",
+      "comment": "A terminal command through the node(\"*\") wildcard route."
+    },
+    {
+      "trigger": "git(\"--version\")",
+      "comment": "Another domain, same generic handler."
+    }
+  ]
+}

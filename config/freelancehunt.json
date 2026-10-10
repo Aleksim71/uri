@@ -1,0 +1,39 @@
+{
+  "comment": "Keywords (case-insensitive, matched in project title and description). Edit for your niche.",
+  "keywords": [
+    "автоматизац",
+    "скрипт",
+    "парсинг",
+    "парсер",
+    "telegram bot",
+    "телеграм бот",
+    "node.js",
+    "nodejs",
+    "python",
+    "api интеграц",
+    "интеграция api"
+  ],
+  "maxPagesPerPoll": 2,
+  "maxMessagePagesPerPoll": 1,
+  "budgetFilter": {
+    "comment": "Projects without a budget always pass (budget is often negotiated). Rates are approximate - update every few months.",
+    "enabled": true,
+    "minEur": 5,
+    "maxEur": 150,
+    "eurPerUnit": {
+      "UAH": 0.0193,
+      "RUB": 0.0101
+    }
+  },
+  "excludeKeywords": {
+    "comment": "If any of these appears in title/description, the project is skipped even if keywords matched.",
+    "enabled": true,
+    "terms": [
+      "seo-аудит",
+      "seo аудит",
+      "planfix",
+      "crm-систем",
+      "настройка crm"
+    ]
+  }
+}

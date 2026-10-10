@@ -1,0 +1,14 @@
+{
+  "scenarioId": "freelancehunt.poll-messages.v1",
+  "onError": "demo(\"log-error\")",
+  "acts": [
+    {
+      "trigger": "freelancehunt(\"fetch-new-messages\")",
+      "comment": "Poll client threads, add unread messages to the outbox."
+    },
+    {
+      "trigger": "telegram(\"notify-new-messages\")",
+      "comment": "Send pending messages to Telegram."
+    }
+  ]
+}
