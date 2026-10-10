@@ -1,5 +1,5 @@
 # Uri
-
+[![test](https://github.com/Aleksim71/uri/actions/workflows/test.yml/badge.svg)](https://github.com/Aleksim71/uri/actions/workflows/test.yml)
 A deliberately small engine for JSON-defined automation scenarios — and a real
 application built on it: a Freelancehunt watcher that polls new projects and
 client messages and notifies me via Telegram and email.
